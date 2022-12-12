@@ -1,6 +1,6 @@
 import Lottie from "lottie-react";
 import ScrollAnimate from "../../assets/lotties/lf30_editor_hj0yzmr0.json";
-import { ContainerHome, Wrapper, ContentTitle, ContentPlanet, LottieScroll, ContentText } from './style';
+import { Container, ContainerHome, Wrapper, ContentTitle, ContentPlanet, LottieScroll, ContentText } from './style';
 import Planet from "../../components/Planet";
 import AnimateWrittenText from "../../components/AnimateWrittenText";
 import { Animator, ScrollContainer, ScrollPage, batch, Fade, Move, Sticky } from "react-scroll-motion";
@@ -19,7 +19,7 @@ function Home() {
     };
 
     return (
-        <>
+        <Container>
             <ScrollContainer>
                 <Header />
                 <ContainerHome>
@@ -55,28 +55,8 @@ function Home() {
                         />
                     </LottieScroll>
                 </ContainerHome>
-
-                <ScrollPage page={1}>
-                    <Animator animation={FadeUp}>
-                        <div style={{ height: 1000 }}>
-                            <p>
-                                Temos a missão de gerar recursos sustentáveis
-                                e proporcionar aos nossos clientes, soluções de descarte
-                                de resíduos eletrônicos de forma eficaz e segura. Com ética,
-                                trabalho em equipe, responsabilidade social e
-                                respeito ao meio ambiente.
-                            </p>
-                        </div>
-                    </Animator>
-                </ScrollPage>
-
-                <ScrollPage page={2}>
-                    <Animator animation={FadeUp}>
-                        <div style={{ height: 1000 }} />
-                    </Animator>
-                </ScrollPage>
             </ScrollContainer>
-        </>
+        </Container>
     );
 }
 
