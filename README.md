@@ -4,9 +4,7 @@
 </div>
 
 <div align="center">
-	<code>
-		👩🏻‍🎓 Projeto interdisciplinar terceiro semestre 👩🏻‍🎓
-	</code>	
+	<code> Projeto interdisciplinar terceiro semestre </code>	
 </div>
 
 <div align="center">
